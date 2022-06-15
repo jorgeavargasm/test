@@ -2,8 +2,6 @@ function funcionAxios(number) {
   alert ("Test");
 var config = {
   headers: {
-    'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With',
-    'Access-Control-Allow-Methods': 'GET, OPTIONS, POST',
     'Access-Control-Allow-Origin': '*'}
 };
     axios({
