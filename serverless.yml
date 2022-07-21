@@ -8,4 +8,4 @@ provider:
 
 functions:
   hello:
-    handler: src/handler.testFunction
+    handler: src/handler.testFunctionNumber
