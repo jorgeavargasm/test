@@ -19,11 +19,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Enter dir and deploy
-      uses: serverless/github-action@v3.1
+    - name: serverless deploy
+      uses: serverless/github-action@v1
       with:
-        args: -c "cd ./<your-dir> && serverless deploy"
-        entrypoint: /bin/sh
+        args: deploy
       env:
         # SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
         # or if using AWS credentials directly
